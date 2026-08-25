@@ -5,9 +5,9 @@
   "license": "MIT",
   "scripts": {
     "format": "prettier --write \"**/*.js\"",
-    "build": "babel src -d dist",
-    "start": "babel-node index.js",
-    "start:dev": "nodemon",
+    "build": "node init && babel src -d dist",
+    "start": "node init && babel-node index.js",
+    "start:dev": "node init && nodemon",
     "test": "jest",
     "test:cov": "jest --coverage",
     "test:e2e": "echo 'No e2e tests implemented yet.'"
